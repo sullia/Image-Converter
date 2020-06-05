@@ -1,4 +1,4 @@
-function ConvertTo-Jpg
+function ConvertTo-Png
 {
     [cmdletbinding()]
     param([Parameter(Mandatory=$true, ValueFromPipeline = $true)] $Path)
@@ -23,5 +23,5 @@ function ConvertTo-Jpg
 
 Set-Location .\bmp
 
-Get-ChildItem *.bmp | ConvertTo-Jpg
+Get-ChildItem *.bmp | ConvertTo-Png
 cd..
